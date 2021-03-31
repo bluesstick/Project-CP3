@@ -101,33 +101,34 @@ SELECT * FROM EMPLOYEES
 SELECT * FROM BRANCH_OFFICES
 
 SELECT * FROM DISHES
-
+GO
 
 
 
 
 CREATE PROCEDURE SelectAllCustomers
 AS
-SELECT * FROM Customers
-GO;
+SELECT * FROM Customers;
+GO
 
 
 EXEC SelectAllCustomers;
-
+GO
 
 
 
 CREATE PROCEDURE SelectAllEmployess
 AS
-SELECT * FROM EMPLOYEES
-GO;
+SELECT * FROM EMPLOYEES;
+GO
 
 
 EXEC SelectAllEmployess;
-
+GO
 
 CREATE INDEX idx_pname
 ON CUSTOMERS (CUstomer_Lastname, Customer_Name);
-
+GO
 
 DROP INDEX idx_pname ON CUSTOMERS;
+GO
