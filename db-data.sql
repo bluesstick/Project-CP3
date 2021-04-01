@@ -135,7 +135,7 @@ EXEC SelectAllEmployess;
 GO
 
 CREATE INDEX idx_pname
-ON CUSTOMERS (CUstomer_Lastname, Customer_Name);
+ON CUSTOMERS (CUstomer_Lastname ASC);
 GO
 
 DROP INDEX idx_pname ON CUSTOMERS;
